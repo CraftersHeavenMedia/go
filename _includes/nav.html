@@ -5,13 +5,10 @@
   style="background-color: #212529"
 >
   <div class="container">
-<!--     <a class="navbar-brand js-scroll-trigger" href="{{ site.baseurl }}/#"> -->
-    <a class="navbar-brand js-scroll-trigger" href="go/assets/img/Logo4.png">
+      <a class="navbar-brand js-scroll-trigger" href="{{ site.baseurl }}/#">
       {%- if site.logo -%}
       <img
-<!--         height="{{ site.logo.height | default: 52 }}" -->
-        height=80px
-        width=200px
+        height="{{ site.logo.height | default: 52 }}"
         src="{{ site.logo.path }}"
       />
       {%- else -%} {{ site.title }} {%- endif -%}
