@@ -147,7 +147,7 @@
 //Test2
 $(function() {
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
-    preventSubmit: true,
+    preventSubmit: false,
     submitError: function($form, event, errors) {
       // Handle error messages here if needed
     },
