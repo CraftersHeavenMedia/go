@@ -145,42 +145,42 @@
 // });
 
 //Test2
-$(function() {
-  $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
-    preventSubmit: false,
-    submitError: function($form, event, errors) {
-      // Handle error messages here if needed
-    },
-    submitSuccess: function($form, event) {
-      event.preventDefault(); // Prevent default submit behaviour
+// $(function() {
+//   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
+//     preventSubmit: false,
+//     submitError: function($form, event, errors) {
+//       // Handle error messages here if needed
+//     },
+//     submitSuccess: function($form, event) {
+//       event.preventDefault(); // Prevent default submit behaviour
 
-      // Get values from FORM
-      var name = $("input#name").val();
-      var email = $("input#email").val();
-      var phone = $("input#phone").val();
-      var website = $("input#website").val();  // Optional field
+//       // Get values from FORM
+//       var name = $("input#name").val();
+//       var email = $("input#email").val();
+//       var phone = $("input#phone").val();
+//       var website = $("input#website").val();  // Optional field
       
-      // Prepare a success message
-      $('#success').html("<div class='alert alert-success'>");
-      $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>");
-      $('#success > .alert-success').append("<strong>Your message has been sent. </strong>");
-      $('#success > .alert-success').append('</div>');
+//       // Prepare a success message
+//       $('#success').html("<div class='alert alert-success'>");
+//       $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>");
+//       $('#success > .alert-success').append("<strong>Your message has been sent. </strong>");
+//       $('#success > .alert-success').append('</div>');
 
-      // Clear all fields after a delay
-      setTimeout(function() {
-        $('#contactForm').trigger("reset");
-      }, 1000);
-    },
-    filter: function() {
-      return $(this).is(":visible");
-    }
-  });
+//       // Clear all fields after a delay
+//       setTimeout(function() {
+//         $('#contactForm').trigger("reset");
+//       }, 1000);
+//     },
+//     filter: function() {
+//       return $(this).is(":visible");
+//     }
+//   });
 
-  // Clear success message when user focuses on the name field
-  $('#name').focus(function() {
-    $('#success').html('');
-  });
-});
+//   // Clear success message when user focuses on the name field
+//   $('#name').focus(function() {
+//     $('#success').html('');
+//   });
+// });
 
 //Test 3
 // $(function() {
