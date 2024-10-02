@@ -5,7 +5,8 @@
   style="background-color: #212529"
 >
   <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="{{ site.baseurl }}/#">
+<!--       <a class="navbar-brand js-scroll-trigger" href="{{ site.baseurl }}/#"> -->
+      <a class="navbar-brand js-scroll-trigger" href="{{ site.baseurl }}/go/">
       {%- if site.logo -%}
       <img
         height="{{ site.logo.height | default: 52 }}"
@@ -36,11 +37,11 @@
           {%- elsif link.section -%}
           <a
             class="nav-link js-scroll-trigger"
-            href="{{ site.baseurl }}/#{{ link.section }}"
+            href="{{ site.baseurl }}/go/{{ link.section }}"
             >{{ link.title }}</a
           >
           {%- else -%}
-          <a class="nav-link js-scroll-trigger" href="#">{{ link.title }}</a>
+          <a class="nav-link js-scroll-trigger" href="go">{{ link.title }}</a>
           {%- endif -%}
         </li>
         {%- endfor -%}
@@ -54,11 +55,11 @@
           {%- elsif link.section -%}
           <a
             class="nav-link js-scroll-trigger"
-            href="{{ site.baseurl }}/#{{ link.section }}"
+            href="{{ site.baseurl }}/go/{{ link.section }}"
             >{{ link.title }}</a
           >
           {%- else -%}
-          <a class="nav-link js-scroll-trigger" href="#">{{ link.title }}</a>
+          <a class="nav-link js-scroll-trigger" href="go">{{ link.title }}</a>
           {%- endif -%}
         </li>
         {%- endfor -%}
