@@ -37,11 +37,11 @@
           {%- elsif link.section -%}
           <a
             class="nav-link js-scroll-trigger"
-            href="{{ site.baseurl }}/go/{{ link.section }}"
+            href="{{ site.baseurl }}/#{{ link.section }}"
             >{{ link.title }}</a
           >
           {%- else -%}
-          <a class="nav-link js-scroll-trigger" href="go">{{ link.title }}</a>
+          <a class="nav-link js-scroll-trigger" href="#">{{ link.title }}</a>
           {%- endif -%}
         </li>
         {%- endfor -%}
@@ -55,11 +55,11 @@
           {%- elsif link.section -%}
           <a
             class="nav-link js-scroll-trigger"
-            href="{{ site.baseurl }}/go/{{ link.section }}"
+            href="{{ site.baseurl }}/#{{ link.section }}"
             >{{ link.title }}</a
           >
           {%- else -%}
-          <a class="nav-link js-scroll-trigger" href="go">{{ link.title }}</a>
+          <a class="nav-link js-scroll-trigger" href="#">{{ link.title }}</a>
           {%- endif -%}
         </li>
         {%- endfor -%}
