@@ -1,3 +1,12 @@
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Crafter's Heaven Media",
+    "url": "https://craftersheavenmedia.github.io/go/",
+    "logo": "https://craftersheavenmedia.github.io/go/assets/img/social-preview.jpg",
+  }
+</script>
 <head>
   {% if site.analytics.google %}
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -40,11 +49,12 @@
   <meta property="og:title" content="Crafter's Heaven Media - Home Improvement Lead Agency" />
   <meta property="og:description" content="We empower home improvement businesses by connecting them with genuine clients." />
   <meta property="og:url" content="https://craftersheavenmedia.github.io/go/" />
-  <meta property="og:image" content="https://craftersheavenmedia.github.io/assets/img/social-preview.jpg" />
+  <meta property="og:image" content="https://craftersheavenmedia.github.io/go/assets/img/social-preview.jpg" />
   <!-- Test End -->
   
   <!-- <title>{% if page.title %}{{ page.title | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}</title> -->
-  <title>CH Media - The Best Ads Agency!</title>
+  <!-- <title>CH Media - The Best Ads Agency!</title> -->
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <!-- Bootstrap core CSS -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
