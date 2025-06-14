@@ -4,7 +4,7 @@ User-agent: *
 Allow: /
 
 # Help search engines find your sitemap
-Sitemap: https://craftersheavenmedia.github.io/go/sitemap.txt
+Sitemap: https://craftersheavenmedia.github.io/go/sitemap.xml
 
 # Optional: Set crawl delay to be respectful (in seconds)
 Crawl-delay: 1
